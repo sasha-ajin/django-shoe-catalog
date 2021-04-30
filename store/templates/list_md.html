@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+
+{% block title %} Lines {%endblock %}
+
+{% block content %}
+    {% for model in models %}
+        <a style="text-align: center; font-family: Ubuntu" href=""></a><p>{{ model.name }}</p><br>
+    {% endfor %}
+{% endblock %}

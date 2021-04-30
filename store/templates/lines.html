@@ -1,0 +1,9 @@
+{% extends 'main.html' %}
+
+{% block title %} Lines {%endblock %}
+
+{% block content %}
+    {% for line in lines %}
+        <a style="text-align: center; font-family: Ubuntu" href="{{ brand }}/{{ line.name}}"><p>{{ line.name }}</p></a> <br>
+    {% endfor %}
+{% endblock %}
